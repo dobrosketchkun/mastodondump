@@ -1,0 +1,52 @@
+{
+  platforms(name: "mastodon") {
+    name
+    code
+    displayName
+    description
+    tagline
+    website
+    icon
+    __typename
+  }
+  nodes(platform: "mastodon") {
+    id
+    name
+    version
+    openSignups
+    host
+    platform {
+      name
+      icon
+      __typename
+    }
+    countryCode
+    countryFlag
+    countryName
+    services {
+      name
+      __typename
+    }
+    __typename
+  }
+  statsGlobalToday(platform: "mastodon") {
+    usersTotal
+    usersHalfYear
+    usersMonthly
+    localPosts
+    localComments
+    __typename
+  }
+  statsNodes(platform: "mastodon") {
+    node {
+      id
+      __typename
+    }
+    usersTotal
+    usersHalfYear
+    usersMonthly
+    localPosts
+    localComments
+    __typename
+  }
+}
